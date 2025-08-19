@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div>
+   <h1><center>Ana Lívia</center></h1>
+   <h4><center>Brasileira, 15 anos, Solteira</center></h4>
+   <h4><center>Rua Grito de Alerta 19, 85 991009047</center></h4>
+  </div>
+  <hr>
+  <div style="text-decoration: underline;">
+   <h2>Objetivo:</h2>
+   <p><center>Estudante de Informática, cursando o 1° ano do Ensino Médio, desejo entrar na área de TI.</center></p>
+  </div>
+  <hr>
+  <div style="text-decoration: underline;">
+    <h2>Formação:</h2>
+    <ol>
+      <li>Estudando na EEEP Paulo Petrola;</li>
+      <li>Estudante de Técnico em Informática;</li>
+      <li>Estudando Linguagens de Programação.</li>
+    </ol>
+  <hr>
+  <div style="text-decoration: underline;">
+    <h2>Cursos e Treinamentos:</h2>
+    <ul>
+      <li>Curso Básico e Intermediário Completo em HTML e CSS;</li>
+      <li>Curso Básico e Intermediário Completo em Python;</li>
+      <li>Certificados Recebidos: Udemy e Mimo.</li>
+    </ul>
+  </div>
+</body>
+</html>
