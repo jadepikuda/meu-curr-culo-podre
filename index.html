@@ -1,177 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Produtos Culinários</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+<html>
 <body>
-    <div class="container">
-        <header>
-            <h1>Cadastro de Produtos Culinários</h1>
-            <p>Adicione informações completas sobre seus produtos culinários</p>
-        </header>
-
-        <form id="culinary-form" class="form">
-            <div class="form-section">
-                <h2>Informações Básicas</h2>
-                
-                <div class="form-group">
-                    <label for="product-name">Nome do Produto *</label>
-                    <input type="text" id="product-name" name="productName" required maxlength="100" 
-                           placeholder="Ex: Bolo de Chocolate Artesanal">
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="category">Categoria *</label>
-                        <select id="category" name="category" required>
-                            <option value="">Selecione uma categoria</option>
-                            <option value="bolos">Bolos</option>
-                            <option value="doces">Doces</option>
-                            <option value="salgados">Salgados</option>
-                            <option value="bebidas">Bebidas</option>
-                            <option value="pratos-principais">Pratos Principais</option>
-                            <option value="sobremesas">Sobremesas</option>
-                            <option value="aperitivos">Aperitivos</option>
-                            <option value="paes">Pães</option>
-                            <option value="outros">Outros</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="price">Preço (R$) *</label>
-                        <input type="number" id="price" name="price" required min="0" step="0.01" 
-                               placeholder="0.00">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="description">Descrição do Produto *</label>
-                    <textarea id="description" name="description" required rows="4" maxlength="500"
-                              placeholder="Descreva seu produto: sabor, textura, ocasião ideal..."></textarea>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="prep-time">Tempo de Preparo (minutos)</label>
-                        <input type="number" id="prep-time" name="prepTime" min="1" max="9999" 
-                               placeholder="Ex: 60">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="servings">Porções</label>
-                        <input type="number" id="servings" name="servings" min="1" max="100" 
-                               placeholder="Ex: 8">
-                    </div>
-                </div>
-            </div>
-
-            <div class="form-section">
-                <h2>Detalhes Culinários</h2>
-                
-                <div class="form-group">
-                    <label for="ingredients">Ingredientes *</label>
-                    <textarea id="ingredients" name="ingredients" required rows="6" maxlength="1000"
-                              placeholder="Liste os ingredientes com suas quantidades:&#10;- 2 xícaras de farinha de trigo&#10;- 1 xícara de açúcar&#10;- 3 ovos&#10;- 200ml de leite"></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label for="instructions">Modo de Preparo *</label>
-                    <textarea id="instructions" name="instructions" required rows="8" maxlength="2000"
-                              placeholder="Descreva passo a passo como preparar:&#10;1. Pré-aqueça o forno a 180°C&#10;2. Em uma tigela, misture...&#10;3. Adicione os ingredientes secos..."></textarea>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="difficulty">Nível de Dificuldade</label>
-                        <select id="difficulty" name="difficulty">
-                            <option value="">Selecione</option>
-                            <option value="facil">Fácil</option>
-                            <option value="medio">Médio</option>
-                            <option value="dificil">Difícil</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="storage">Tempo de Conservação</label>
-                        <input type="text" id="storage" name="storage" maxlength="100"
-                               placeholder="Ex: 3 dias na geladeira">
-                    </div>
-                </div>
-            </div>
-
-            <div class="form-section">
-                <h2>Informações Adicionais</h2>
-                
-                <div class="form-group">
-                    <label for="image-url">URL da Imagem do Produto</label>
-                    <input type="url" id="image-url" name="imageUrl" 
-                           placeholder="https://exemplo.com/imagem-produto.jpg">
-                </div>
-
-                <div class="form-group">
-                    <label for="tags">Tags (separadas por vírgula)</label>
-                    <input type="text" id="tags" name="tags" maxlength="200"
-                           placeholder="caseiro, sem glúten, vegano, festa, natal">
-                </div>
-
-                <div class="checkbox-group">
-                    <h3>Características Especiais</h3>
-                    <div class="checkbox-grid">
-                        <label class="checkbox-item">
-                            <input type="checkbox" name="features" value="sem-gluten">
-                            <span class="checkmark"></span>
-                            Sem Glúten
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="checkbox" name="features" value="vegano">
-                            <span class="checkmark"></span>
-                            Vegano
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="checkbox" name="features" value="vegetariano">
-                            <span class="checkmark"></span>
-                            Vegetariano
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="checkbox" name="features" value="sem-lactose">
-                            <span class="checkmark"></span>
-                            Sem Lactose
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="checkbox" name="features" value="organico">
-                            <span class="checkmark"></span>
-                            Orgânico
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="checkbox" name="features" value="caseiro">
-                            <span class="checkmark"></span>
-                            Caseiro
-                        </label>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="notes">Observações Especiais</label>
-                    <textarea id="notes" name="notes" rows="3" maxlength="300"
-                              placeholder="Dicas especiais, variações da receita, sugestões de acompanhamento..."></textarea>
-                </div>
-            </div>
-
-            <div class="form-actions">
-                <button type="reset" class="btn btn-secondary">Limpar Formulário</button>
-                <button type="submit" class="btn btn-primary">Cadastrar Produto</button>
-            </div>
-        </form>
-
-        <div id="success-message" class="success-message" style="display: none;">
-            <h3>✅ Produto cadastrado com sucesso!</h3>
-            <p>As informações do produto foram registradas.</p>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+  <div>
+   <h1><center>Ana Lívia</center></h1>
+   <h4><center>Brasileira, 15 anos, Solteira</center></h4>
+   <h4><center>Rua do Caralho, 99 999999999</center></h4>
+  </div>
+  <hr>
+  <div style="text-decoration: underline;">
+   <h2>Objetivo:</h2>
+   <p><center>Estudante de Informática, cursando o 1° ano do Ensino Médio, desejo entrar na área de TI.</center></p>
+  </div>
+  <hr>
+  <div style="text-decoration: underline;">
+    <h2>Formação:</h2>
+    <ol>
+      <li>Estudando na EEEP Paulo Petrola;</li>
+      <li>Estudante de Técnico em Informática;</li>
+      <li>Estudando Linguagens de Programação.</li>
+    </ol>
+  <hr>
+  <div style="text-decoration: underline;">
+    <h2>Cursos e Treinamentos:</h2>
+    <ul>
+      <li>Curso Básico e Intermediário Completo em HTML e CSS;</li>
+      <li>Curso Básico e Intermediário Completo em Python;</li>
+      <li>Certificados Recebidos: Udemy e Mimo.</li>
+    </ul>
+    <hr>
+    <ul>
+      <li><a href="index1.html">Vá para a página de index</a></li>
+    </ul>
+  </div>
 </body>
 </html>
