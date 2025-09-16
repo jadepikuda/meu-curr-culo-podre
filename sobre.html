@@ -1,3 +1,94 @@
-<ul>
-<li><a href="index1.html">Volte para a página de index</a></li>
-</ul>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Culinária</title>
+</head>
+<body>
+    <h1>Cardápio Culinário</h1>
+    <form>
+        <table border="1" width="100%">
+            <tr>
+                <td width="33%" align="center">
+                    <h3>Pizza Margherita</h3>
+                    <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3" alt="Pizza Margherita" width="200" height="150">
+                    <p><strong>Descrição:</strong> Pizza clássica italiana com molho de tomate, mussarela fresca, manjericão e azeite de oliva extra virgem.</p>
+                    <p><strong>Preço:</strong> R$ 35,90</p>
+                    <input type="checkbox" name="produto1" value="pizza_margherita"> Selecionar
+                </td>
+                <td width="33%" align="center">
+                    <h3>Hambúrguer Artesanal</h3>
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="Hambúrguer Artesanal" width="200" height="150">
+                    <p><strong>Descrição:</strong> Pão brioche, hambúrguer de carne bovina 180g, queijo cheddar, bacon crocante, alface e tomate.</p>
+                    <p><strong>Preço:</strong> R$ 28,50</p>
+                    <input type="checkbox" name="produto2" value="hamburguer_artesanal"> Selecionar
+                </td>
+                <td width="33%" align="center">
+                    <h3>Salmão Grelhado</h3>
+                    <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288" alt="Salmão Grelhado" width="200" height="150">
+                    <p><strong>Descrição:</strong> Filé de salmão grelhado com ervas finas, acompanha arroz integral e legumes no vapor.</p>
+                    <p><strong>Preço:</strong> R$ 42,90</p>
+                    <input type="checkbox" name="produto3" value="salmao_grelhado"> Selecionar
+                </td>
+            </tr>
+            <tr>
+                <td width="33%" align="center">
+                    <h3>Risotto de Funghi</h3>
+                    <img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371" alt="Risotto de Funghi" width="200" height="150">
+                    <p><strong>Descrição:</strong> Risotto cremoso preparado com mix de cogumelos frescos, queijo parmesão e vinho branco.</p>
+                    <p><strong>Preço:</strong> R$ 38,90</p>
+                    <input type="checkbox" name="produto4" value="risotto_funghi"> Selecionar
+                </td>
+                <td width="33%" align="center">
+                    <h3>Tacos Mexicanos</h3>
+                    <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b" alt="Tacos Mexicanos" width="200" height="150">
+                    <p><strong>Descrição:</strong> Tortillas de milho com carne temperada, guacamole, pico de gallo e queijo mexicano (3 unidades).</p>
+                    <p><strong>Preço:</strong> R$ 24,90</p>
+                    <input type="checkbox" name="produto5" value="tacos_mexicanos"> Selecionar
+                </td>
+                <td width="33%" align="center">
+                    <h3>Lasanha Bolonhesa</h3>
+                    <img src="https://images.unsplash.com/photo-1574894709920-11b28e7367e3" alt="Lasanha Bolonhesa" width="200" height="150">
+                    <p><strong>Descrição:</strong> Lasanha tradicional com molho bolonhesa caseiro, molho branco e queijo gratinado.</p>
+                    <p><strong>Preço:</strong> R$ 32,90</p>
+                    <input type="checkbox" name="produto6" value="lasanha_bolonhesa"> Selecionar
+                </td>
+            </tr>
+            <tr>
+                <td width="33%" align="center">
+                    <h3>Sushi Combinado</h3>
+                    <img src="https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56" alt="Sushi Combinado" width="200" height="150">
+                    <p><strong>Descrição:</strong> Combinado especial com 20 peças: sashimi, nigiri, uramaki e hot roll variados.</p>
+                    <p><strong>Preço:</strong> R$ 65,90</p>
+                    <input type="checkbox" name="produto7" value="sushi_combinado"> Selecionar
+                </td>
+                <td width="33%" align="center">
+                    <h3>Paella Valenciana</h3>
+                    <img src="https://images.unsplash.com/photo-1534080564583-6be75777b70a" alt="Paella Valenciana" width="200" height="150">
+                    <p><strong>Descrição:</strong> Paella tradicional espanhola com frutos do mar, frango, arroz bomba e açafrão (serve 2 pessoas).</p>
+                    <p><strong>Preço:</strong> R$ 89,90</p>
+                    <input type="checkbox" name="produto8" value="paella_valenciana"> Selecionar
+                </td>
+                <td width="33%" align="center">
+                    <h3>Tiramisu</h3>
+                    <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9" alt="Tiramisu" width="200" height="150">
+                    <p><strong>Descrição:</strong> Sobremesa italiana clássica com café, mascarpone, ovos, açúcar e cacau em pó.</p>
+                    <p><strong>Preço:</strong> R$ 16,90</p>
+                    <input type="checkbox" name="produto9" value="tiramisu"> Selecionar
+                </td>
+            </tr>
+        </table>
+        <br>
+        <p>
+            <strong>Nome:</strong> <input type="text" name="nome" required>
+            <strong>Telefone:</strong> <input type="tel" name="telefone" required>
+            <strong>Email:</strong> <input type="email" name="email" required>
+        </p>
+        <p>
+            <input type="submit" value="Fazer Pedido">
+            <input type="reset" value="Limpar Formulário">
+        </p>
+    </form>
+</body>
+</html>
